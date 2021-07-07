@@ -1,7 +1,7 @@
 def square_or_square_root(arr)
   result = Array.new
   for x in arr
-    root = x ** 0.5 #(1/2) - why when we use this construction we receive int and not right answers; **0.5 and **(1/2) - is not the same?
+    root = x ** 0.5 #(1/2) - why when we use x ** (1/2) we receive int and not right answers; **0.5 and **(1/2) - is not the same?
 
     if (Math.sqrt(x) % 1).zero?
       result.append(root)
